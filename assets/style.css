@@ -1,5 +1,38 @@
-
-
-header {
-    height: 10vh;
+*{
+    padding: 0;
+    border: 0;
+    
 }
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: fle;
+
+}
+
+nav {
+    height: 10vh;
+    background-color: teal;
+}
+.card1 {
+    width: 300px;
+}
+
+.card2 {
+    width: 700px;
+}
+.card3 {
+    width: 400px;
+}
+.card1, .card2, .card3 {
+
+    border-color: 10px black ;
+    border-radius: 5px;
+    /*width: 500px;*/ 
+    background-color: aqua;
+    margin-top: 15px;
+    height: 80vh;
+}
+
+

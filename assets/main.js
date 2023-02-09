@@ -6,3 +6,11 @@ fetch("https://api.artic.edu/api/v1/artworks/search?q=starrynight").then(functio
 
     console.log(data);
 })
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, options);
+  });
+
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
