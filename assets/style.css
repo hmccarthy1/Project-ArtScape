@@ -27,12 +27,30 @@ nav {
 }
 .card1, .card2, .card3 {
 
-    border-color: 10px black ;
+    border-color: 20px black ;
     border-radius: 5px;
     /*width: 500px;*/ 
     background-color: aqua;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     height: 80vh;
 }
 
+.card-image {
+   /* object-fit: cover;*/
+   float: left;
+    height: 400px;
+    width: 400px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
 
+ul {
+    float: left;
+    line-height: 20px;
+    font-size:20px;
+    margin-left: 20px;
+}
+
+p {
+    
+}
