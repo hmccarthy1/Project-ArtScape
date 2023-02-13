@@ -12,9 +12,22 @@ main {
 }
 
 nav {
-    height: 10vh;
+    height: 15vh;
     background-color: teal;
+    padding-bottom: 5px;
+    font-size: 200px;
+    position: relative;
 }
+
+h1 {
+    margin: 2px;
+} 
+
+.instruction {
+    padding: 8px;
+}
+
+
 .card1 {
     width: 300px;
 }
@@ -26,31 +39,33 @@ nav {
     width: 400px;
 }
 .card1, .card2, .card3 {
-
-    border-color: 20px black ;
     border-radius: 5px;
-    /*width: 500px;*/ 
-    background-color: aqua;
+    padding-top: 10px; 
+    background-color: rgba(36, 147, 147, 0.397);
     /*margin-top: 15px;*/
     height: 80vh;
 }
 
 .card-image {
    /* object-fit: cover;*/
-   float: left;
-    height: 400px;
+   
+    
     width: 400px;
     padding-top: 10px;
     padding-left: 10px;
 }
 
 ul {
-    float: left;
+    
     line-height: 20px;
     font-size:20px;
     margin-left: 20px;
 }
 
 p {
-    
+    align-content: flex-end;
+}
+
+.pagination {
+    align-content: center;
 }
