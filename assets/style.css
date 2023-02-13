@@ -1,5 +1,71 @@
+*{
+    padding: 0;
+    border: 0;
+    
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: fle;
+
+}
+
+nav {
+    height: 15vh;
+    background-color: teal;
+    padding-bottom: 5px;
+    font-size: 200px;
+    position: relative;
+}
+
+h1 {
+    margin: 2px;
+} 
+
+.instruction {
+    padding: 8px;
+}
 
 
-header {
-    height: 10vh;
+.card1 {
+    width: 300px;
+}
+
+.card2 {
+    width: 700px;
+}
+.card3 {
+    width: 400px;
+}
+.card1, .card2, .card3 {
+    border-radius: 5px;
+    padding-top: 10px; 
+    background-color: rgba(36, 147, 147, 0.397);
+    /*margin-top: 15px;*/
+    height: 80vh;
+}
+
+.card-image {
+   /* object-fit: cover;*/
+   
+    
+    width: 400px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+ul {
+    
+    line-height: 20px;
+    font-size:20px;
+    margin-left: 20px;
+}
+
+p {
+    align-content: flex-end;
+}
+
+.pagination {
+    align-content: center;
 }
