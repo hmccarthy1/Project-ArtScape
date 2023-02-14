@@ -155,6 +155,7 @@ tabRight.click(function () {
         console.log(paginationChildren[varIndex -1 ])
        $( paginationChildren[varIndex-1]).removeClass('active');
        $( paginationChildren[varIndex]).addClass('active');
+       updateInfo()
 
 
             ;
@@ -183,6 +184,7 @@ tabLeft.click(function () {
         varIndex--;
         $( paginationChildren[varIndex+1]).removeClass('active');
         $( paginationChildren[varIndex]).addClass('active');
+        updateInfo();
  
 
             ;
