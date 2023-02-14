@@ -13,7 +13,7 @@
 <body>
   <nav>
     <div class="header">
-      <a href="#" class="brand-logo center"><h1>project artScape</h1></a>
+      <a href="#" class="brand-logo center"><h1>Project ArtScape</h1></a>
     </div>
   </nav>
   <main class="content"> <!--this is the container of card1-3-->
@@ -30,25 +30,15 @@
         <form class="col s12">
           <div class="row">
             <div class="input-field col s6">
-              <input placeholder="Artist" id="artist_name" type="text" class="validate">
-              <label for="artist_name"><strong>Name of Artist</strong></label>
+              <input placeholder="Artist" id="searchText" type="text" class="validate">
+              <label for="artist_name"><strong>Search Criteria</strong></label>
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col s6">
-              <input id="Artwork_name" type="text" class="validate">
-              <label for="Artwork_name"><strong>Artwork Name</strong></label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s6">
-              <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-              <label for="disabled">Disabled</label>
-            </div>
-          </div>
+        
+          
         </form>
       </div>
-      <input type="text" class="datepicker">
+      
       <!--button-->
       <button class="btn waves-effect waves-light" button id="searchButton" type="submit" name="action">Search
         <i class="material-icons right"></i>
@@ -58,9 +48,9 @@
     <!--<div class="col s12 m6">-->
     <div class="card">
       <div class="row">
-        <div class="col s6">
-          <div class="card-image">
-            <img id="mainImg" src="assets\_DSC0400.JPG">
+        <div class="col s6 l4">
+          <div class="card-image row">
+            <img id="mainImg" class="col l12" src="assets\_DSC0400.JPG">
           </div>
         </div>
         <div class="col s6">
@@ -85,13 +75,18 @@
       <!--page selection-->
 <div class="row">
   <ul class="pagination">
-    <li class="disabled"><a href="#!"><i class="material-icons"><i id ="previousButton"></i>Back</i></a></li>
+    <li><a href="#!"><i class="material-icons"><i id ="previousButton"></i>Back</i></a></li>
     <li class="active"><a href="#!">1</a></li>
     <li class="waves-effect"><a href="#!">2</a></li>
     <li class="waves-effect"><a href="#!">3</a></li>
     <li class="waves-effect"><a href="#!">4</a></li>
     <li class="waves-effect"><a href="#!">5</a></li>
-    <li class="waves-effect"><a href="#!"><i class="material-icons"><i id="nextButton"></i>Next</i></a></li>
+    <li class="waves-effect"><a href="#!">6</a></li>
+    <li class="waves-effect"><a href="#!">7</a></li>
+    <li class="waves-effect"><a href="#!">8</a></li>
+    <li class="waves-effect"><a href="#!">9</a></li>
+    <li class="waves-effect"><a href="#!">10</a></li>
+    <li class="waves-effect" id="nextButton"><a href="#!"><i class="material-icons"><i ></i>Next</i></a></li>
   </ul>
 </div>
     </div>
@@ -112,9 +107,9 @@
         </div>
         
         <div class="card-content white-text">
-          <span class="card-title">Artist Links</span>
+          <span class="card-title">Wikipedia Artwork Links</span>
           <ul>
-            <li id="artwork1">Artwork 1:</li>
+            <li >Artwork 1: <a id="artwork1" href=""></a> </li>
             <li id="artwork2">Artwork 2:</li>
             <li id="artwork3">Artwork 3:</li>
           </ul>
@@ -130,7 +125,7 @@
 
 
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="./assets/materialize/js/materialize.js"></script>
   <script src="./assets/main.js"></script>
 </body>

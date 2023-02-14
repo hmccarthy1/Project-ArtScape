@@ -58,7 +58,7 @@ searchBtn.click(function () {
 
 
 
-                fetch("https://en.wikipedia.org/w/api.php?origin=*&action=opensearch&search=" + search.val())
+                fetch("https://en.wikipedia.org/w/api.php?origin=*&action=opensearch&search=" + objArray[varIndex].title)
                     .then(function (response) {
                         return response.json()
                     }).then(function (data) {
