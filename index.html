@@ -13,7 +13,7 @@
 <body>
   <nav>
     <div class="header">
-      <a href="#" class="brand-logo center"><h1>Project ArtScape</h1></a>
+      <!--<a href="#" class="brand-logo center">--><h1 class="head">Project ArtScape</h1></a>
     </div>
   </nav>
   <main class="content"> <!--this is the container of card1-3-->
@@ -29,9 +29,9 @@
       <div class="row">
         <form class="col s12">
           <div class="row">
-            <div class="input-field col s6">
-              <input placeholder="Artist" id="searchText" type="text" class="validate">
-              <label for="artist_name"><strong>Search Criteria</strong></label>
+            <div class="input-field col s8">
+              <input placeholder="Artist/Keyword" id="searchText" type="text" class="validate">
+              <label for="artist_name"><strong>Search</strong></label>
             </div>
           </div>
         
@@ -55,9 +55,9 @@
         </div>
         <div class="col s6">
           <ul>
-            <li id="imageTitle"><strong>artwork name</strong></li><br>
-            <li><strong>artist name</strong></li><br>
-            <li><strong>created on:</strong></li>
+            <li id="imageTitle"><strong>Artwork name:</strong></li><br>
+            <li><strong>Artist name:</strong></li><br>
+            <li><strong>Created on:</strong></li>
           </ul>
         </div>
       </div>
@@ -75,7 +75,7 @@
       <!--page selection-->
 <div class="row">
   <ul class="pagination">
-    <button id ="previousButton"><a href="#!"><i class="material-icons"><i ></i>Back</i></a></button>
+    <button id ="previousButton"><!--<a href="#!">--><i class="material-icons"><i ></i>Back</i></a></button>
     <li id="result1" class="active"><a href="#!">1</a></li>
     <li id="result2" class="waves-effect"><a href="#!">2</a></li>
     <li id="result3" class="waves-effect"><a href="#!">3</a></li>
@@ -86,7 +86,7 @@
     <li id="result8" class="waves-effect"><a href="#!">8</a></li>
     <li id="result9" class="waves-effect"><a href="#!">9</a></li>
     <li id="result10" class="waves-effect"><a href="#!">10</a></li>
-    <button class="waves-effect" id="nextButton"><a href="#!"><i class="material-icons"><i ></i>Next</i></a></button>
+    <button class="waves-effect" id="nextButton"><!--<a href="#!">--><i class="material-icons"><i ></i>Next</i></a></button>
   </ul>
 </div>
     </div>
@@ -97,18 +97,18 @@
       <div class="row">
         <!--<div class="col s12 m6">-->
         <!--<div class="card blue-grey darken-1">-->
-        <div class="card-content white-text">
+        <div class="card-content black-text">
           <span class="card-title">Artist Links</span>
-          <ul>
+          <ul class="list">
             <li > Artist 1: <a id="artist1" href=""></a></li>
             <li > Artist 2: <a id="artist2" href=""></a></li>
             <li > Artist 3: <a id="artist3" href=""></a></li>
           </ul>
         </div>
         
-        <div class="card-content white-text">
+        <div class="card-content black-text">
           <span class="card-title">Wikipedia Artwork Links</span>
-          <ul>
+          <ul class="list">
             <li >Artwork 1:  <a id="artwork1" href=""></a></li>
             <li >Artwork 2:  <a href="" id="artwork2"></a></li>
             <li > Artwork 3: <a id="artwork3"  href=""></a></li>

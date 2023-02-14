@@ -1,3 +1,8 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Indie+Flower&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Indie+Flower&family=Montserrat:wght@300&display=swap');
+
+
 *{
     padding: 0;
     border: 0;
@@ -8,7 +13,7 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     height: 85vh;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -17,6 +22,14 @@ nav {
     padding-bottom: 5px;
     font-size: 200px;
     position: relative;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 2px whitesmoke;
+}
+
+.head{
+    padding: 25px;
 }
 
 h1 {
@@ -75,8 +88,54 @@ p {
 
 .pagination {
     align-content: center;
+    background-color: teal;
+    height: 50px;
+    margin-right: 500px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .card-title {
     font-size: 15pt;
+}
+
+::placeholder{
+    color: grey;
+    font-size: 10px;
+}
+
+.card-title{
+    font-size: 20px;
+}
+
+.list{
+    font-size: 15px;
+}
+
+#previousButton{
+    margin-top: 9px;
+    background-color: teal;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 13px;
+    color: rgb(68, 68, 68);
+}
+
+#result1,
+#result2,
+#result3,
+#result4,
+#result5,
+#result6,
+#result7,
+#result8,
+#result9,
+#result10{
+    margin-top: 9px;
+    background-color: teal;
+}
+
+#nextButton{
+    background-color: teal;
+    color:rgb(68, 68, 68);
 }
