@@ -173,7 +173,12 @@ tabRight.click(function () {
         })
     }
 
-    else window.alert("no more results")
+    else   {
+        $('#modalText').html('No Additional Results')
+        $('#mainModal').removeClass('hidden');
+        $('.overlay').removeClass('hidden');
+        $('.overlay').css('display', 'block');
+    }
 
 });
 
@@ -202,13 +207,17 @@ tabLeft.click(function () {
         })
     }
 
-    else window.alert("this is the first result, no previous results")
-
+    else  {
+        $('#modalText').html('No Previous Results')
+        $('#mainModal').removeClass('hidden');
+        $('.overlay').removeClass('hidden');
+        $('.overlay').css('display', 'block');
+    }
 });
 
 
-
-
-
-
+$("#closeModal").click( function() {
+   
+    $('#mainModal').addClass('hidden');
+})
 
