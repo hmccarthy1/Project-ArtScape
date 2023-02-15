@@ -224,3 +224,11 @@ nav div {
     display: block !important;
     position: fixed
   }
+
+  #searchButton {
+
+    height: 4vh;
+    width: 4vw;
+    background-color: rgba(8, 220, 244, 0.948);
+    color: rgb(15, 15, 15);
+  }
