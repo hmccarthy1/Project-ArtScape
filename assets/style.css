@@ -30,6 +30,9 @@ nav {
     align-items: center;
     
 }
+.row {
+    margin-bottom: 5px;
+}
 
 
 
@@ -55,7 +58,7 @@ h1 {
 .card {
     width: 70vw;
     height: 85vh;
-    position: static;
+    position: relative;
 
 }
 .card3 {
@@ -97,7 +100,9 @@ p {
     align-content: center;
     background-color: teal;
     height: 50px;
-    margin-right: 500px;
+    margin-left: 0;
+    margin-right: 0;
+    
     border-radius: 5px;
     text-align: center;
 }
@@ -168,8 +173,8 @@ nav div {
   }
   
   .modal .flex {
-    display: flex;
-    align-items: center;
+    
+
     justify-content: space-between;
   }
   
@@ -194,7 +199,7 @@ nav div {
   
   .btn {
     display: inline-block;
-    padding: 0.8rem 1.4rem;
+   
     font-weight: 700;
     background-color: black;
     color: white;
@@ -209,10 +214,13 @@ nav div {
   }
   
   .btn-close {
-    transform: translate(10px, -20px);
-    padding: 0.5rem 0.7rem;
+   padding: 15px;
+   align-self: flex-end;
     background: #eee;
     border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    right: 25px;
   }
 
   .hidden {
@@ -222,5 +230,28 @@ nav div {
   .overlay {
     background-color: gray;
     display: block !important;
-    position: fixed
+    position: fixed !important;
+  }
+
+  img {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+  }
+
+  .modal {
+
+    z-index: 9999;
+    position: absolute !important;
+ 
+  }
+ 
+  #pageRow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  h3 {
+    text-align: center;
   }
