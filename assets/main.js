@@ -39,7 +39,16 @@ $('#artist3')
 ];
 
 
+$('li').click(function(target) {
+    $( paginationChildren[varIndex]).removeClass('active');
 
+    varIndex = $(target.currentTarget).data('descr')
+    console.log($(target.currentTarget).data('descr'));
+    $( paginationChildren[varIndex]).addClass('active');
+
+    updateInfo();
+
+})
 
 
 function fetchSecondApi(id, results) {
