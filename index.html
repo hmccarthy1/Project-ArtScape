@@ -20,7 +20,7 @@
   </nav>
   <main class="content"> <!--this is the container of card1-3-->
     
-    <section id="mainModal" class="modal hidden">
+    <div id="mainModal" class="modal hidden">
       <div class="flex">
         
         <button id="closeModal" class="btn-close">⨉</button>
@@ -33,7 +33,7 @@
       </div>
     
    
-    </section>
+    </div>
     
     <div class="overlay hidden"></div>
   
@@ -51,7 +51,7 @@
           <div class="row">
             <div class="input-field col s8">
               <input placeholder="Artist/Keyword" id="searchText" type="text" class="validate">
-              <label for="artist_name"><strong>Search</strong></label>
+          
             </div>
           </div>
         
@@ -70,14 +70,14 @@
       <div class="row">
         <div class="col s6 l4">
           <div class="card-image row">
-            <img id="mainImg" class="col l12" src="assets\_DSC0400.JPG">
+            <img id="mainImg" class="col l12" src="assets/noImage.jpg">
           </div>
         </div>
         <div class="col s6">
           <ul>
             <li id="imageTitle"><strong>Artwork name:</strong></li><br>
-            <li><strong>Artist name:</strong></li><br>
-            <li><strong>Created on:</strong></li>
+            <li id="artistName"><strong>Artist name:</strong></li><br>
+            <li id="dateCreated"><strong>Created on:</strong></li>
           </ul>
         </div>
       </div>
@@ -86,14 +86,13 @@
       <div class="row">
         <div class="col s12">
           <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
-              require little markup to use effectively.</p>
+            <p id="artDescription">No Search results. Please perform a valid search to see an artwork description. </p>
           </div>
         </div>
 
       </div>
       <!--page selection-->
-<div class="row">
+<div id="pageRow" class="row">
   <ul class="pagination">
     <button id ="previousButton"><!--<a href="#!">--><i class="material-icons"><i ></i>Back</i></a></button>
     <li id="result1" class="active"><a href="#!">1</a></li>

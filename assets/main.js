@@ -15,7 +15,10 @@ var tabLeft = $('#previousButton')
 var mainImage = $('#mainImg');
 var imageTitle = $('#imageTitle');
 var paginationChildren = $(".pagination").children('li');
-console.log(paginationChildren)
+var artistName = $("#artistName");
+console.log(paginationChildren);
+var createdOn = $("#dateCreated");
+var artworkDescription = $('#artDescription')
 
 var artArray = [
 
@@ -47,6 +50,7 @@ function fetchSecondApi(id, results) {
         objArray[currentIndex].artist = data.data.artist_title;
         objArray[currentIndex].dateCreated = data.data.date_end;
         objArray[currentIndex].image_id = data.data.image_id;
+        objArray[currentIndex].artworkDescription = data.data.thumbnail.alt_text
         
        
         currentIndex++;
@@ -62,24 +66,38 @@ searchBtn.click(function () {
     fetch("https://api.artic.edu/api/v1/artworks/search?q=" + search.val()).then(function(response) {
     return response.json();
 }).then(function(data) {
+    
+
     objArray = data.data;
-    console.log(JSON.stringify(objArray))
+    if (objArray.length < 1) { 
+        
+    $('#modalText').html('No Results Found')
+    $('#mainModal').removeClass('hidden');
+    $('.overlay').removeClass('hidden');
+    $('.overlay').css('display', 'block'); return }
+    else {
+    console.log((objArray))
     maxLength = data.data.length;   
     currentIndex = 0;
     fetchSecondApi(objArray[0].id, objArray)
-})})
+}})})
 
 
 function updateInfo() {
     console.log(objArray)
 
-            if (objArray.length < 1) {window.alert("No results"); return}
-                imageTitle.html(objArray[varIndex].title + "( " + objArray[varIndex].dateCreated + " ) ")
+           
+
+           
+                imageTitle.html("Artwork Name: " + objArray[varIndex].title + "( " + objArray[varIndex].dateCreated + " ) ");
+                artistName.html("Artist Name: " + objArray[varIndex].artist);
+                createdOn.html("Created On: " + objArray[varIndex].dateCreated)
                 console.log(JSON.stringify(objArray))
                 imagePath = objArray[varIndex].image_id;
                 console.log(mainImage)
                 console.log(imagePath);
                 mainImage.attr('src', "https://www.artic.edu/iiif/2/" + imagePath + "/full/843,/0/default.jpg");
+                artworkDescription.html(objArray[varIndex].artworkDescription)
 
 
 
@@ -106,7 +124,7 @@ function updateInfo() {
                             
                         }
 
-                        
+                    
 
 
                     }).then(function() {
@@ -135,9 +153,9 @@ function updateInfo() {
                             
                         }
 
-
+                    
                     })})
-            }
+                }
 
 
 
