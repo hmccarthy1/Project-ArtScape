@@ -19,7 +19,7 @@ var artistName = $("#artistName");
 console.log(paginationChildren);
 var createdOn = $("#dateCreated");
 var artworkDescription = $('#artDescription')
-
+var lastSearch = $('#search1')
 var artArray = [
 
     $('#artwork1'),
@@ -37,6 +37,9 @@ $('#artist3')
 
 
 ];
+console.log(localStorage.getItem('lastSearchTerm'));
+console.log(lastSearch)
+lastSearch.html(localStorage.getItem('lastSearchTerm'))
 
 
 $('li').click(function(target) {
@@ -76,7 +79,7 @@ searchBtn.click(function () {
     return response.json();
 }).then(function(data) {
     
-
+    localStorage.setItem('lastSearchTerm', search.val())
     objArray = data.data;
     if (objArray.length < 1) { 
         
