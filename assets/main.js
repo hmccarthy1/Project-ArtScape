@@ -80,6 +80,7 @@ searchBtn.click(function () {
 }).then(function(data) {
     
     localStorage.setItem('lastSearchTerm', search.val())
+    lastSearch.html(localStorage.getItem('lastSearchTerm'))
     objArray = data.data;
     if (objArray.length < 1) { 
         
