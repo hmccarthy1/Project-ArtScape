@@ -31,6 +31,8 @@
 					throw new Error( "jQuery requires a window with a document" );
 				}
 				return factory( w );
+
+				
 			};
 	} else {
 		factory( global );
